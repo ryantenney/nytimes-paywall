@@ -1,0 +1,16 @@
+{
+    "name" : "New York Times Paywall Smasher",
+    "version"  : "1.0",
+    "description" : "Disables the New York Times Paywall",
+    "browser_actions" : {
+        "icons" : {
+            "128" : "icon128.png",
+            "48" : "icon48.png",
+            "16" : "icon16.png"
+        }
+    },
+    "content_scripts" : [{
+        "matches": ["http://www.nytimes.com/*"],
+        "css" : ["nyt.css"]
+    }]
+}
